@@ -1,9 +1,15 @@
+import { techList } from "./technologies";
+import { repoList } from "./Repositories";
+
 /*
 Plan is to have a landing page with a
 stylized image of me looking at a computer monitor
 Going to have text that says "Software Engineer"
 and "Craig Johnson" with animated arrows pointing
 at my character.
+
+Next I will have an about me page that goes into detail
+about my coding journey, hobbies, and goals.
 
 Next I'll have a list of my technical skills
 which I want to be able to sort through
@@ -27,11 +33,13 @@ Resume will be shown again.
 // I want my resume to be embedded into my site
 // I added tailwind but I think imma remove it and stick to sass
 // Goal is to be done by Aug 23rd.
+// Going to have to look into media queries more now that I don't have tailwind.
 
 function Portfolio() {
   return (
     <>
       <LandingPage />
+      <SelfStory />
       <TechnicalSkills />
       <RepositoryList />
       <ExperienceTimeline />
@@ -51,6 +59,17 @@ function LandingPage(){
   );
 };
 
+// envisioning a rectangle dialogue box with a headshot of me next to it and stylized palm trees and water behind
+function SelfStory(){
+  return(
+    <div className="SelfStory">
+      <div className="headshot" />
+      <div className="StoryContainer" />
+      <div className="backgroundElements" />
+      <div className="foregroundElements" />
+    </div>
+  );
+};
 
 function TechnicalSkills(){ return(); };
 function RepositoryList(){ return(); };

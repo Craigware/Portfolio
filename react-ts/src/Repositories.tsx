@@ -105,5 +105,6 @@ export const repoList = [
   carSquared,
   complet,
   gravityEngine,
-  portfolio
+  portfolio,
+  pyGameLearning
 ];
