@@ -1,8 +1,12 @@
+/*
+Typescript sorta fun
+like c# and js combined
+*/
 class Tech{ 
   name: string;
   rating: number;
   comfortRating: number;
-  dateAquired: Date;
+  dateAcquired: Date;
   field: string;
   additionalComments: Array<string> | undefined;
   iconPath: string | undefined;
@@ -11,7 +15,7 @@ class Tech{
     name: string,
     rating: number,
     comfortRating: number,
-    dateAquired: Date,
+    dateAcquired: Date,
     field: string = "web",
     additionalComments: Array<string> | undefined = undefined,
     )
@@ -19,13 +23,18 @@ class Tech{
     this.name = name;
     this.rating = rating;
     this.comfortRating = comfortRating;
-    this.dateAquired = dateAquired;
+    this.dateAcquired = dateAcquired;
     this.field = field;
     this.additionalComments = additionalComments;
     this.iconPath = `/src/assets/${this.name}`
   };
-}
+};
 
+
+/*
+A db would've been nice for this but its just a portfolio
+but it's just a portfolio website I guess >:(
+*/
 const python = new Tech("Python", 10, 10, new Date("February 6, 2023"));
 const javascript = new Tech("Javascript", 10, 10, new Date("April 2023"));
 const cSharp = new Tech("C#", 10, 8, new Date("August, 2020"), "game");
@@ -53,11 +62,11 @@ const photoshop = new Tech("Photoshop", 10, 9, new Date("August 2019"), "art");
 const illustrator = new Tech("Illustrator", 7, 4, new Date("August 2019"), "art");
 const clipStudio = new Tech("ClipStudio", 7, 2, new Date("January, 2020"), "art");
 const docker = new Tech("Docker", 10, 10, new Date("April, 2023"));
-const pygame = new Tech("Pygame", 10, 7, new Date("April, 2023"), "game")
+const pygame = new Tech("Pygame", 10, 7, new Date("April, 2023"), "game");
 
 export const techList = [
   python, javascript, cSharp, react, vite, typescript, mongoDB, postgres, sql,
   unity, html, css, tailwindCSS, boostrap, sass, django, fastAPI, cPP, vulkan,
   cMake, godot, gamemakerStudio, blender, photoshop, illustrator, clipStudio,
   docker, pygame
-]
+];
