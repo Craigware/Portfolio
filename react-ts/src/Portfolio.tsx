@@ -66,6 +66,7 @@ function SelfStory(){
     <div className="SelfStory">
       <div className="StoryContainer">
         <div className="headshot"/>
+        <p>Hey! I am Craig Johnson. I love programming and arts of all kinds. Before taking up coding as a profession I was pursuing graphic design. Coding has been a hobby of mine since middle school when I used to create custom minigames with a Minecraft plugin called Skript. That led me down a rabbit hole of learning many different technologies.</p>
       </div>
     </div>
   );
