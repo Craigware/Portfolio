@@ -8,7 +8,7 @@ class Tech{
   comfortRating: number;
   dateAcquired: Date;
   field: string;
-  additionalComments: Array<string> | undefined;
+  additionalComments: object | undefined;
   iconPath: string | undefined;
 
   constructor(
@@ -17,7 +17,7 @@ class Tech{
     comfortRating: number,
     dateAcquired: Date,
     field: string = "web",
-    additionalComments: Array<string> | undefined = undefined,
+    additionalComments: object | undefined = undefined,
     )
   {
     this.name = name;
@@ -26,7 +26,7 @@ class Tech{
     this.dateAcquired = dateAcquired;
     this.field = field;
     this.additionalComments = additionalComments;
-    this.iconPath = `/src/assets/${this.name}`
+    this.iconPath = `/src/assets/tech_icons/${this.name}`
   };
 };
 

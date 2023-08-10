@@ -1,5 +1,6 @@
 import { techList } from "./technologies";
 import { repoList } from "./Repositories";
+import "./Portfolio.scss";
 
 /*
 Plan is to have a landing page with a
@@ -38,44 +39,43 @@ Resume will be shown again.
 function Portfolio() {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
       <SelfStory />
-      <TechnicalSkills />
+      {/* <TechnicalSkills />
       <RepositoryList />
       <ExperienceTimeline />
       <SoftSkills />
-      <ContactInformation />
+      <ContactInformation /> */}
     </>
   );
 };
 
-function LandingPage(){
-  return(
-    <div className="LandingPage">
-      <div className="Me" />
-      <div className="floating-text name" />
-      <div className="floating-text title" />
-    </div>
-  );
-};
+// function LandingPage(){
+//   return(
+//     <div className="LandingPage">
+//       <div className="Me" />
+//       <div className="floating-text name" />
+//       <div className="floating-text title" />
+//     </div>
+//   );
+// };
 
 // envisioning a rectangle dialogue box with a headshot of me next to it and stylized palm trees and water behind
 function SelfStory(){
   return(
     <div className="SelfStory">
-      <div className="headshot" />
-      <div className="StoryContainer" />
-      <div className="backgroundElements" />
-      <div className="foregroundElements" />
+      <div className="StoryContainer">
+        <div className="headshot"/>
+      </div>
     </div>
   );
 };
 
-function TechnicalSkills(){ return(); };
-function RepositoryList(){ return(); };
-function ExperienceTimeline(){ return(); };
-function SoftSkills(){ return(); };
-function ContactInformation(){ return(); };
+// function TechnicalSkills(){ return(); };
+// function RepositoryList(){ return(); };
+// function ExperienceTimeline(){ return(); };
+// function SoftSkills(){ return(); };
+// function ContactInformation(){ return(); };
 
 
 export default Portfolio

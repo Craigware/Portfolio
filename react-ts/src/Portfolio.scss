@@ -1,0 +1,35 @@
+$shadowColor: rgba(19, 10, 70, .8);
+
+.SelfStory {
+  height: 100vh;
+  position: relative;
+
+  .StoryContainer {
+    position: absolute;
+    margin: auto auto;
+
+    left: 0; right: 0;
+    top: 50%; transform: translateY(-50%);
+
+
+    width: 75%;
+    height: 65%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.384), blue);
+
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px $shadowColor;
+
+    display: grid;
+
+    .headshot {
+      position: absolute;
+      margin: 0px 2%;
+      border-radius: 100%;
+      top: 50%; transform: translateY(-50%);
+      height: 400px;
+      width: 400px;
+      background-color: white;
+      box-shadow: 1px 1px 20px $shadowColor;
+    }
+  }
+}
