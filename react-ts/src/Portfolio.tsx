@@ -39,8 +39,8 @@ Resume will be shown again.
 function Portfolio() {
   return (
     <>
-      {/* <LandingPage /> */}
-      <SelfStory />
+      <LandingPage />
+      {/* <SelfStory /> */}
       {/* <TechnicalSkills />
       <RepositoryList />
       <ExperienceTimeline />
@@ -50,27 +50,27 @@ function Portfolio() {
   );
 };
 
-// function LandingPage(){
-//   return(
-//     <div className="LandingPage">
-//       <div className="Me" />
-//       <div className="floating-text name" />
-//       <div className="floating-text title" />
-//     </div>
-//   );
-// };
-
-// envisioning a rectangle dialogue box with a headshot of me next to it and stylized palm trees and water behind
-function SelfStory(){
+function LandingPage(){
   return(
-    <div className="SelfStory">
-      <div className="StoryContainer">
-        <div className="headshot"/>
-        <p>Hey! I am Craig Johnson. I love programming and arts of all kinds. Before taking up coding as a profession I was pursuing graphic design. Coding has been a hobby of mine since middle school when I used to create custom minigames with a Minecraft plugin called Skript. That led me down a rabbit hole of learning many different technologies.</p>
-      </div>
+    <div className="LandingPage">
+      <div className="Me" />
+      <div className="floating-text name" />
+      <div className="floating-text title" />
     </div>
   );
 };
+
+// envisioning a rectangle dialogue box with a headshot of me next to it and stylized palm trees and water behind
+// function SelfStory(){
+//   return(
+//     <div className="SelfStory">
+//       <div className="StoryContainer">
+//         <div className="headshot"/>
+//         <p>Hey! I am Craig Johnson. I love programming and arts of all kinds. Before taking up coding as a profession I was pursuing graphic design. Coding has been a hobby of mine since middle school when I used to create custom minigames with a Minecraft plugin called Skript. That led me down a rabbit hole of learning many different technologies.</p>
+//       </div>
+//     </div>
+//   );
+// };
 
 // function TechnicalSkills(){ return(); };
 // function RepositoryList(){ return(); };
