@@ -39,6 +39,7 @@ Resume will be shown again.
 function Portfolio() {
   return (
     <>
+      <Navigation />
       <LandingPage />
       {/* <SelfStory /> */}
       {/* <TechnicalSkills />
@@ -47,6 +48,19 @@ function Portfolio() {
       <SoftSkills />
       <ContactInformation /> */}
     </>
+  );
+};
+
+function Navigation(){
+  return(
+    <div className="Navigations">
+      <p>Landing Page</p>
+      <p>Technical Skills</p>
+      <p>Repositories</p>
+      <p>Experience</p>
+      <p>Soft Skills</p>
+      <p>Contact Information</p>
+    </div>
   );
 };
 
@@ -64,6 +78,7 @@ function LandingPage(){
         <div className="Me_Glass_Line Middle_Connection" />
         <div className="Me_Glass_Line Left_Ear_Connection" />
         <div className="Me_Glass_Line Right_Ear_Connection" />
+        <div className="Me_Hair" />
 
         <div className="Desktop_Back" />
         <div className="Desktop_Top" />
