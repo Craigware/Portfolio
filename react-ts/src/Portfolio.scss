@@ -46,3 +46,102 @@ $shadowColor: rgba(19, 10, 70, .8);
     margin: auto;
   }
 }
+
+.LandingPage {
+  .Me {
+    position: relative;
+
+
+    .Me_Head {
+      position: absolute;
+      background-color: white;
+      border-radius: 100%;
+      height: 50rem;
+      width: 50rem;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+    
+    .Me_Ear {
+      position: absolute;
+      background-color: orange;
+      border-radius: 100%;
+      height: 20rem;
+      width: 20rem;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+    .Left_Ear {
+      right: 60rem;
+      background-color: blue;
+    }
+
+    .Right_Ear {
+      left: 60rem;
+    }
+
+
+    .Me_Eye {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 60vh; transform: translateY(-50%);
+      height: 8rem;
+      width: 6rem;
+      background-color: black;
+      border-radius: 100%;
+    }
+    
+    .Left_Eye {
+      left: 20rem;
+    }
+
+    .Right_Eye {
+      right: 20rem;
+    }
+
+
+    .Me_Glass {
+      position: absolute;
+      border: 10px solid black;
+      border-radius: 100%;
+      height: 18rem;
+      width: 18rem;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 60vh; transform: translateY(-50%);
+    }
+
+    .Left_Glass {
+      left: 20rem;
+    }
+
+    .Right_Glass {
+      right: 20rem;
+    }
+
+
+    .Me_Glass_Line {
+      position: absolute;
+      border-top: 10px solid black;
+    }
+    
+    .Middle_Connection {
+      border-radius: 100%;
+      height: 5rem;
+      width: 5rem;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 55vh; transform: translateY(-50%);
+    }
+  }
+}

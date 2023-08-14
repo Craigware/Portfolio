@@ -53,7 +53,22 @@ function Portfolio() {
 function LandingPage(){
   return(
     <div className="LandingPage">
-      <div className="Me" />
+      <div className="Me">
+        <div className="Me_Head" />
+        <div className="Me_Ear Left_Ear" />
+        <div className="Me_Ear Right_Ear" />
+        <div className="Me_Eye Left_Eye" />
+        <div className="Me_Eye Right_Eye" />
+        <div className="Me_Glass Left_Glass" />
+        <div className="Me_Glass Right_Glass" />
+        <div className="Me_Glass_Line Middle_Connection" />
+        <div className="Me_Glass_Line Left_Ear_Connection" />
+        <div className="Me_Glass_Line Right_Ear_Connection" />
+
+        <div className="Desktop_Back" />
+        <div className="Desktop_Top" />
+        <div className="Desktop_Light" />
+      </div>
       <div className="floating-text name" />
       <div className="floating-text title" />
     </div>
