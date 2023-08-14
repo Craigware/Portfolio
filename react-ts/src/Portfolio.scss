@@ -64,7 +64,7 @@ $shadowColor: rgba(19, 10, 70, .8);
       top: 55vh; transform: translateY(-50%);
     }
 
-    
+
     .Me_Ear {
       position: absolute;
       background-color: orange;
@@ -108,6 +108,7 @@ $shadowColor: rgba(19, 10, 70, .8);
     }
 
 
+    $glassPlacement: 25rem;
     .Me_Glass {
       position: absolute;
       border: 10px solid black;
@@ -121,27 +122,55 @@ $shadowColor: rgba(19, 10, 70, .8);
     }
 
     .Left_Glass {
-      left: 20rem;
+      left: $glassPlacement;
     }
 
     .Right_Glass {
-      right: 20rem;
+      right: $glassPlacement;
     }
 
 
+    $glassLineRotation: 50deg;
     .Me_Glass_Line {
       position: absolute;
-      border-top: 10px solid black;
+      background-color: black;
+      margin: auto;
+      left: 0;
+      right: 0;
     }
     
     .Middle_Connection {
       border-radius: 100%;
-      height: 5rem;
-      width: 5rem;
-      margin: auto;
+      height: 2rem;
+      width: 2rem;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+    .Left_Ear_Connection {
+      width: 10.4rem;
+      height: 10px;
+      left: 43rem;
+      top: 46vh; transform: translateY(-50%);
+      transform: rotate(-$glassLineRotation);
+    }
+
+    .Right_Ear_Connection {
+      width: 10.4rem;
+      height: 10px;
+      right: 43rem;
+      top: 46vh; transform: translateY(-50%);
+      transform: rotate($glassLineRotation);
+    }
+
+    .Desktop_Back {
+      position: absolute;
       left: 0;
       right: 0;
-      top: 55vh; transform: translateY(-50%);
+      margin: auto;
+      width: 75vw;
+      height: 30vh;
+      background-color: black;
+      top: 85vh; transform: translateY(-50%);
     }
   }
 }
