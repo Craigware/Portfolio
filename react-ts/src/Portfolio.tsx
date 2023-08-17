@@ -1,6 +1,7 @@
 import { techList } from "./technologies";
 import { repoList } from "./Repositories";
 import "./Portfolio.scss";
+import "./LandingPage.scss";
 
 /*
 Plan is to have a landing page with a
@@ -41,7 +42,7 @@ function Portfolio() {
     <>
       <Navigation />
       <LandingPage />
-      {/* <SelfStory /> */}
+      <SelfStory />
       {/* <TechnicalSkills />
       <RepositoryList />
       <ExperienceTimeline />
@@ -84,23 +85,24 @@ function LandingPage(){
         <div className="Desktop_Top" />
         <div className="Desktop_Light" />
       </div>
-      <div className="floating-text name" />
-      <div className="floating-text title" />
+      <p className="Name" >Craig Johnson</p>
+      <div className="Arrow" />
+      <p className="Title" >Full Stack Developer</p>
+      <div className="Arrow" />
     </div>
   );
 };
 
 // envisioning a rectangle dialogue box with a headshot of me next to it and stylized palm trees and water behind
-// function SelfStory(){
-//   return(
-//     <div className="SelfStory">
-//       <div className="StoryContainer">
-//         <div className="headshot"/>
-//         <p>Hey! I am Craig Johnson. I love programming and arts of all kinds. Before taking up coding as a profession I was pursuing graphic design. Coding has been a hobby of mine since middle school when I used to create custom minigames with a Minecraft plugin called Skript. That led me down a rabbit hole of learning many different technologies.</p>
-//       </div>
-//     </div>
-//   );
-// };
+function SelfStory(){
+  return(
+    <div className="SelfStory">
+      <div className="StoryContainer">
+        <div className="headshot"/>
+      </div>
+    </div>
+  );
+};
 
 // function TechnicalSkills(){ return(); };
 // function RepositoryList(){ return(); };

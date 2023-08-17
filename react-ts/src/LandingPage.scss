@@ -1,0 +1,132 @@
+.LandingPage {
+  position: relative;
+  height: 100vh;
+
+  p {
+    position: absolute;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.63);
+  }
+
+  .Title {
+    top: 350px;
+    right: 50px;
+    transform: rotate(30deg);
+  }
+
+  .Name {
+    top: 200px;
+    left: 200px;
+    transform: rotate(-20deg);
+  }
+
+  .Arrow {
+
+  }
+
+  .Me {
+    position: relative;
+    
+    $glassPlacement: 25rem;
+    $skinTone: #ddd0a0;
+    $glassesColor: black;
+    $glassLineRotation: 70deg;
+    $desktopColor: black;
+    $pupilColor: black;
+    $eyePlacement: 20rem;
+
+
+    * {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+
+
+    .Me_Head {
+      z-index: 2;
+      background-color: $skinTone;
+      border-radius: 100%;
+      height: 50rem;
+      width: 50rem;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+
+    .Me_Ear {
+      z-index: 1;
+      background-color: $skinTone;
+      border-radius: 100%;
+      height: 20rem;
+      width: 20rem;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+    .Left_Ear {
+      right: 60rem;
+    }
+
+    .Right_Ear {
+      left: 60rem;
+    }
+
+
+    .Me_Eye {
+      z-index: 3;
+      top: 60vh; transform: translateY(-50%);
+      height: 8rem;
+      width: 6rem;
+      background-color: $pupilColor;
+      border-radius: 100%;
+    }
+    
+    .Left_Eye { left: $eyePlacement; }
+    .Right_Eye { right: $eyePlacement; }
+
+    .Me_Glass {
+      z-index: 3;
+      border: 10px solid black;
+      border-radius: 100%;
+      height: 18rem;
+      width: 18rem;
+      top: 60vh; transform: translateY(-50%);
+    }
+
+    .Left_Glass { left: $glassPlacement; }
+    .Right_Glass { right: $glassPlacement; }
+
+    .Me_Glass_Line {
+      z-index: 3;
+      width: 10.4rem;
+      height: 10px;
+      background-color: $glassesColor;
+    }
+    
+    .Middle_Connection {
+      background-color: black;
+      width: 7rem;
+      top: 55vh; transform: translateY(-50%);
+    }
+
+    .Left_Ear_Connection {
+      left: 43rem;
+      top: 46vh; transform: translateY(-50%);
+      transform: rotate(-$glassLineRotation);
+    }
+
+    .Right_Ear_Connection {
+      right: 43rem;
+      top: 46vh; transform: translateY(-50%);
+      transform: rotate($glassLineRotation);
+    }
+
+    .Desktop_Back {
+      z-index: 4;
+      width: 75vw;
+      height: 30vh;
+      background-color: $desktopColor;
+      top: 85vh; transform: translateY(-50%);
+    }
+  }
+}
